@@ -11,24 +11,21 @@ for(let i = 1; i < 100; i += 2)
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
-for(let i = 1; i < 100; i++)
+for(let i = 1; i <= 100; i++)
 {
-    if(i % 3 == 0 && i % 5 ==0)
-    {
-        console.log("FIZZBUZZ");
-    }
-    else
-    {
+    let output = "";
+
         if(i % 3 == 0)
         {
-            console.log("FIZZ");
+            output += "FIZZ";
         }
 
         if(i % 5 == 0)
         {
-            console.log("BUZZ");
+            output += "BUZZ";
         }
-    }
+    
+        console.log(`${i} ${output}`);
 }
 
 // Exercise 3 Section
